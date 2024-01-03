@@ -1,4 +1,4 @@
-# Two Sum - Time Complexity Optimized
+# Two Sum - Space Complexity Optimized
 
 ## Intuition
 
