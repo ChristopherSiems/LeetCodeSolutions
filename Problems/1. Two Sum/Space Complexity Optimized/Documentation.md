@@ -16,7 +16,7 @@ $O(n^2)$. In the worst-case scenario _nums_ will be iterated over $\sum^n_{i = 1
 
 ### Space complexity
 
-$O(1)$. Our algorithm uses a static number of data pieces of static size, only two for-loop variables. So our algorithm will use a constant, $O(1)$, amount of memory.
+$O(1)$. Our algorithm uses a static number of data pieces, only two for-loop variables and the two pieces of input data, _nums_ and _target_. So our algorithm will use a constant, $O(1)$, amount of memory.
 
 ## Code
 
