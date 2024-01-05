@@ -1,3 +1,9 @@
+<!---
+Copyright (C) 2024 Christopher Siems - All Rights Reserved
+
+You may use, distribute, and modify this code under the terms of the GNU General Public License 3, which should have been included this file. If not visit: https://www.gnu.org/licenses/gpl-3.0.en.html
+--->
+
 # Two Sum - Space Complexity Optimized
 
 ## Intuition
@@ -44,3 +50,5 @@ public class Solution {
 ## Notes
 
 - LeetCode's memory usage calculations are finicky and will produce differing numbers each time the solution is submitted, regardless, memory used is constant with this algorithm
+
+###### Copyright (C) 2024 Christopher Siems - All Rights Reserved

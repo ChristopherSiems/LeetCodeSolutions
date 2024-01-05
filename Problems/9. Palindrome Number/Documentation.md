@@ -1,3 +1,9 @@
+<!---
+Copyright (C) 2024 Christopher Siems - All Rights Reserved
+
+You may use, distribute, and modify this code under the terms of the GNU General Public License 3, which should have been included this file. If not visit: https://www.gnu.org/licenses/gpl-3.0.en.html
+--->
+
 # Palindrome Number
 
 ## Intuition
@@ -65,3 +71,5 @@ public class Solution {
 ## Notes
 
 - This algorithm is fully optimized for best time and space complexities
+
+###### Copyright (C) 2024 Christopher Siems - All Rights Reserved

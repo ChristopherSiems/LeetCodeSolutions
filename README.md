@@ -1,3 +1,9 @@
+<!---
+Copyright (C) 2024 Christopher Siems - All Rights Reserved
+
+You may use, distribute, and modify this code under the terms of the GNU General Public License 3, which should have been included this file. If not visit: https://www.gnu.org/licenses/gpl-3.0.en.html
+--->
+
 # LeetCodeSolutions
 
 A collection of each LeetCode problem I have completed along with documentation explaining the solutions I arrived at for each problem.
@@ -10,3 +16,5 @@ The "Problems" folder contains each problem I have completed in its own dedicate
 ## About Me
 
 My name is Christopher Siems and I am a current computer science student at Clark University. I am putting together this repo to keep track of my work as I work my way through the LeetCode problem set and, hopefully, help anyone doing the same with understanding the solutions to the problems we are both facing. Please feel free to follow, fork, and report issues with this repo. Follow me here, on GitHub, find me on [LeetCode](https://leetcode.com/ChristopherKS/), or connect with me on [LinkedIn](https://www.linkedin.com/in/christopher-siems/).
+
+###### Copyright (C) 2024 Christopher Siems - All Rights Reserved

@@ -1,3 +1,9 @@
+<!---
+Copyright (C) 2024 Christopher Siems - All Rights Reserved
+
+You may use, distribute, and modify this code under the terms of the GNU General Public License 3, which should have been included this file. If not visit: https://www.gnu.org/licenses/gpl-3.0.en.html
+--->
+
 # Two Sum - Time Complexity Optimized
 
 ## Intuition
@@ -77,3 +83,5 @@ public class Solution {
 ## Notes
 
 - Import statements are unnecessary in LeetCode and cause slowdown, the included import is best ignored when using this algorithm in LeetCode
+
+###### Copyright (C) 2024 Christopher Siems - All Rights Reserved
