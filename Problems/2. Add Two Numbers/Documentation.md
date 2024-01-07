@@ -48,9 +48,9 @@ With these ideas in mind, let us begin to formulate an approach.
 1. Create instances of the necessary data variables and objects.
 
     1. Create an integer, `carry`, for the carried digit and initialize it to be `0`.
-    
+
     2. Create a ListNode, `head`, for the head of the returned linked list and initialize `head` with a new empty constructor ListNode.
-    
+
     3. Create another ListNode, `current`, to keep track of the current node being worked with.
 
 2. Open a while-loop with the condition that `l1` is not `null` or `l2` is not `null` or `carry` is not `0`. This while-loop will iterate through the linked list.
@@ -60,7 +60,7 @@ With these ideas in mind, let us begin to formulate an approach.
     2. Add `l1.val` to sum if `l1` is not `null` and set `l1` to be `l1.next`.
 
     3. Do the previous step but for `l2`.
-    
+
     4. Set `carry` to `sum / 10`.
 
     5. Set `current.next` to be a new ListNode with a `val` of `sum % 10` and a `next` of `null`.
@@ -68,6 +68,8 @@ With these ideas in mind, let us begin to formulate an approach.
     6. Set `current` to `current.next`.
 
 3. Return `head.next`.
+
+This algorithm will return the sum of the two linked lists inputted into it as linked lists in reverse order of digits.
 
 ## Complexity
 
