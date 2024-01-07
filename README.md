@@ -6,7 +6,7 @@ You may use, distribute, and modify this code under the terms of the GNU General
 
 # LeetCodeSolutions
 
-A collection of each LeetCode problem I have completed along with documentation explaining the solutions I arrived at for each problem.
+A work-in-progress collection of each LeetCode problem I have completed along with documentation explaining the solutions I arrived at for each problem.
 
 ## Structure
 
