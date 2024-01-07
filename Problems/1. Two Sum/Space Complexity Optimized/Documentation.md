@@ -32,7 +32,7 @@ $O(1)$. Our algorithm uses a static number of data pieces, only two for-loop var
 
 ## Code
 
-```
+```Java
 public class Solution {
   public static int[] twoSum(int[] nums, int target) {
     for (int index1 = 0; index1 < nums.length - 1; index1++) {

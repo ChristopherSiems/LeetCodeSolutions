@@ -8,7 +8,7 @@ You may use, distribute, and modify this code under the terms of the GNU General
 
 ## Intuition
 
-The Palindrome Number problem requires us to determine if a given integer `x` is a palindrome and return `true` if it is. To devise and approach, let us consider what we know. 
+The Palindrome Number problem requires us to determine if a given integer `x` is a palindrome and return `true` if it is. To devise an approach, let us consider what we know.
 
 - A negative integer is not a palindrome as it will start with `-` but will not end with a `-`.
 
@@ -52,7 +52,7 @@ $O(1)$. This algorithm uses constant space in memory, the two variable `x` and `
 
 ## Code
 
-```
+```Java
 public class Solution {
   public static boolean isPalindrome(int x) {
     if ((x < 0) || (x != 0 && ((x % 10) == 0))) {

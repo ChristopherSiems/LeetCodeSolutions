@@ -8,12 +8,13 @@ You may use, distribute, and modify this code under the terms of the GNU General
 
 ## Intuition
 
-The Two Sum problem requires us to find two integers in an array, `nums`, of integers that sum to a target integer, `target`, and return an array containing the indices of said two integers. To devise an approach to solving this problem, let us consider what we know. 
+The Two Sum problem requires us to find two integers in an array, `nums`, of integers that sum to a target integer, `target`, and return an array containing the indices of said two integers. To devise an approach to solving this problem, let us consider what we know.
+
 - We need to keep track of integers and their associated indices, because we need to associate pieces of data with other pieces of data we can probably use a hash table.
 
-- We are working with an indexed data structure, `nums`, so traversing the structure can be easily accomplished with a for-loop. 
+- We are working with an indexed data structure, `nums`, so traversing the structure can be easily accomplished with a for-loop.
 
-- When comparing an integer in `nums` to `target`, the number we need to add to said integer is equivalent to the `target` minus the integer. 
+- When comparing an integer in `nums` to `target`, the number we need to add to said integer is equivalent to the `target` minus the integer.
 
 With these ideas in mind, let us begin to formulate an approach.
 
@@ -26,12 +27,13 @@ With these ideas in mind, let us begin to formulate an approach.
     1. Find the `complement` of the current integer in `nums` that makes `target` when summed with the current integer.
     
     2. Check if `complement` is already a valid key in the hash table. If it is, we have found our two integers and can call `get(complement)` on the hash table to retrieve `complement`'s index, then we can return an array of `complement`'s index and the current integer in `nums`' index.
-    
+
     3. If `complement` is not a valid key in the hash table, we add the current value and index to the hash table as a key-value pair and iterate to the next integer in the array.
 
 3. In the event there is no pair of indices returned within the for-loop, we can return `null`.
 
 This algorithm will find the first two integers in an array that sum to `target`, but there is a change we can make to further optimize time complexity. Instead of iterating from the front of the array to the back of the array, we can use a two pointer approach and create two for-loop variables. One variable iterating forward through the array, `front`, and one variable iterating backward through the array, `back`. With the for-loop terminating when `front` takes on a value greater than `back`. With these new variables we can change the body of the for-loop.
+
 1. Compute the `complement` of `front` and check if it is present in the hash table, returning an array of `complement`'s index and `front`'s index if `complement` is present in the hash table.
 
 2. Compute the `complement` of `back` and check if it is present in the hash table, returning and array of `complement`'s index and `back`'s index if `complement` is present in the hash table.
@@ -54,7 +56,7 @@ $O(n)$. The amount of memory our algorithm uses scales linearly with the size of
 
 ## Code
 
-```
+```Java
 import java.util.HashMap;
 
 public class Solution {
