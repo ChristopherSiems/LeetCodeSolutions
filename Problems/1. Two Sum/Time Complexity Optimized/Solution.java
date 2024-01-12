@@ -5,11 +5,12 @@
  * been included with this file. If not visit: https://www.gnu.org/licenses/gpl-3.0.en.html
  */
 
+import java.util.Map;
 import java.util.HashMap;
 
 public class Solution {
   public static int[] twoSum(int[] nums, int target) {
-    HashMap<Integer, Integer> complements = new HashMap<Integer, Integer>();
+    Map<Integer, Integer> complements = new HashMap<Integer, Integer>();
     for (int front = 0, back = nums.length - 1; front <= back; front++, back--) {
       int complement = target - nums[front];
       if (complements.containsKey(complement)) {

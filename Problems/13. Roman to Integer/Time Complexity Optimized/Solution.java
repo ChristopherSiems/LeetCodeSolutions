@@ -5,6 +5,7 @@
  * been included with this file. If not visit: https://www.gnu.org/licenses/gpl-3.0.en.html
  */
 
+import java.util.Map;
 import java.util.HashMap;
 
 public class Solution {

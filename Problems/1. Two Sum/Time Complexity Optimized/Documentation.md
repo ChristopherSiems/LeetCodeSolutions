@@ -25,7 +25,7 @@ With these ideas in mind, let us begin to formulate an approach.
 2. Use a for-loop to iterate through the array from front to back. In the body of said for-loop we need to do a few things.
 
     1. Find the `complement` of the current integer in `nums` that makes `target` when summed with the current integer.
-    
+
     2. Check if `complement` is already a valid key in the hash table. If it is, we have found our two integers and can call `get(complement)` on the hash table to retrieve `complement`'s index, then we can return an array of `complement`'s index and the current integer in `nums`' index.
 
     3. If `complement` is not a valid key in the hash table, we add the current value and index to the hash table as a key-value pair and iterate to the next integer in the array.
@@ -57,11 +57,12 @@ $O(n)$. The amount of memory our algorithm uses scales linearly with the size of
 ## Code
 
 ```Java
+import java.util.Map;
 import java.util.HashMap;
 
 public class Solution {
   public static int[] twoSum(int[] nums, int target) {
-    HashMap<Integer, Integer> complements = new HashMap<Integer, Integer>();
+    Map<Integer, Integer> complements = new HashMap<Integer, Integer>();
     for (int front = 0, back = nums.length - 1; front <= back; front++, back--) {
       int complement = target - nums[front];
       if (complements.containsKey(complement)) {
